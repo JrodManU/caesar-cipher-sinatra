@@ -1,5 +1,17 @@
 <html>
+<head></head>
 <body>
-  <h1>Hello</h1>
+  <h1>caesar-cipher-sinatra</h1>
+  <form method="GET">
+    <label for="original_string">String to encrypt</label>
+    <input type="text" name="original_string"><br>
+    <label for="shift_number">Number of places to shift</label>
+    <input type="text" name="shift_number"><br>
+    <input type="submit" value="Encrypt">
+  </form>
+  <% if !new_string.empty? %>
+    <h2>Encryption</h2>
+    <%= new_string %>
+  <% end %>
 </body>
 </html>
